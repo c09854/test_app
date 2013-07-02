@@ -1,0 +1,6 @@
+<h1>Test app home page</h1>
+
+<%if current_user%>
+<p>hello <%= current_user.firstname%></p>
+	<%=link_to "details", current_user%>
+<% end%>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testapp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/navigation'%>
+  <a id="Intercom" href="mailto:2f9a237b9e220e4c330efd3d9a525363f71cbef8@incoming.intercom.io">Support</a>
+</head>
+
+<body>
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+<%= yield %>
+<%= intercom_script_tag %>
+
+
+</html>
